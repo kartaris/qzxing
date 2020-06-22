@@ -27,7 +27,7 @@ RESOURCES += qml.qrc
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
-include(../../src/QZXing-components.pri)
+include(../../QZXing/QZXing-components.pri)
 
 # Default rules for deployment.
 include(deployment.pri)

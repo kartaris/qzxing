@@ -35,4 +35,4 @@ SOURCES += main.cpp \
     zxing/qrcode/encoder/BitVectorTests.cpp \
     EncoderStressTest.cpp
 
-include(../../../src/QZXing.pri)
+include(../../../QZXing/QZXing.pri)

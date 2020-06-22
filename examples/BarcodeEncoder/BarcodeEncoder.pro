@@ -30,4 +30,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 CONFIG += enable_encoder_qr_code
 
-include(../../src/QZXing-components.pri)
+include(../../QZXing/QZXing-components.pri)

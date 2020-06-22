@@ -17,11 +17,11 @@
 CONFIG +=   qt warn_on
 
 DEFINES += QZXING_LIBRARY \
-        ZXING_ICONV_CONST \
-        DISABLE_LIBRARY_FEATURES
-		 
-INCLUDEPATH  += $$PWD \
-                $$PWD/zxing
+    ZXING_ICONV_CONST \
+    DISABLE_LIBRARY_FEATURES
+
+INCLUDEPATH += $$PWD \
+    $$PWD/zxing
 
 HEADERS += $$PWD/QZXing_global.h \
     $$PWD/CameraImageWrapper.h \
@@ -457,19 +457,19 @@ symbian {
 
     DEFINES += NOFMAXL
 
-	# Installation
-	headers.files = $$PWD/QZXing.h $$PWD/QZXing_global.h
-	headers.path = $$PREFIX/include
-	target.path = $$PREFIX/lib
-	INSTALLS += headers target
+        # Installation
+        headers.files = $$PWD/QZXing.h $$PWD/QZXing_global.h
+        headers.path = $$PREFIX/include
+        target.path = $$PREFIX/lib
+        INSTALLS += headers target
 
-	# pkg-config support
-	CONFIG += create_pc create_prl no_install_prl
-	QMAKE_PKGCONFIG_DESTDIR = pkgconfig
-	QMAKE_PKGCONFIG_LIBDIR = ${prefix}/lib
-	QMAKE_PKGCONFIG_INCDIR = ${prefix}/include
+        # pkg-config support
+        CONFIG += create_pc create_prl no_install_prl
+        QMAKE_PKGCONFIG_DESTDIR = pkgconfig
+        QMAKE_PKGCONFIG_LIBDIR = ${prefix}/lib
+        QMAKE_PKGCONFIG_INCDIR = ${prefix}/include
 
-	unix:QMAKE_CLEAN += -r pkgconfig lib$${TARGET}.prl
+        unix:QMAKE_CLEAN += -r pkgconfig lib$${TARGET}.prl
 }
 
 win32-msvc*{
@@ -477,7 +477,7 @@ win32-msvc*{
     DEFINES += __STDC_LIMIT_MACROS
 
     INCLUDEPATH += $$PWD/zxing/win32/zxing \
-	            $$PWD/zxing/win32/zxing/msvc
+                    $$PWD/zxing/win32/zxing/msvc
     HEADERS += $$PWD/zxing/win32/zxing/msvc/stdint.h \
                 $$PWD/zxing/win32/zxing/iconv.h
 

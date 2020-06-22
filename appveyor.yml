@@ -77,7 +77,7 @@ install:
 build_script:
   - mkdir "%APPVEYOR_BUILD_FOLDER%/build"
   - cd "%APPVEYOR_BUILD_FOLDER%/build"
-  - call "%QT_ROOT%/bin/qmake.exe" CONFIG+=%Configuration% PREFIX="%APPVEYOR_BUILD_FOLDER%/install" "%APPVEYOR_BUILD_FOLDER%/src/QZXing.pro"
+  - call "%QT_ROOT%/bin/qmake.exe" CONFIG+=%Configuration% PREFIX="%APPVEYOR_BUILD_FOLDER%/install" "%APPVEYOR_BUILD_FOLDER%/QZXing/QZXing.pro"
   - call %MAKE%
   - call %MAKE% install 
 

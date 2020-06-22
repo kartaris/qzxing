@@ -43,7 +43,7 @@ SOURCES += main.cpp \
     droparea.cpp
 
 # Please do not modify the following two lines. Required for deployment.
-include(../../src/QZXing-components.pri)
+include(../../QZXing/QZXing-components.pri)
 
 if(lessThan(QT_VERSION, 5.0)): {
     include(qmlapplicationviewer/qmlapplicationviewer.pri)

@@ -45,5 +45,5 @@ before_script:
 script:
   - mkdir ${TRAVIS_BUILD_DIR}/build
   - cd ${TRAVIS_BUILD_DIR}/build
-  - ${QT_ROOT}/bin/qmake -o Makefile CONFIG+=Release ${TRAVIS_BUILD_DIR}/src/QZXing.pro
+  - ${QT_ROOT}/bin/qmake -o Makefile CONFIG+=Release ${TRAVIS_BUILD_DIR}/QZXing/QZXing.pro
   - make -f Makefile
